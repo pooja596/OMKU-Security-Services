@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 15px 0;
+  background: #212529b5;
 }
 
 #header.header-scrolled {
@@ -118,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #343a40;
+  color: #f8f9fa;
   padding: 8px 15px 12px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -939,12 +940,12 @@ section {
   padding: 0 0 30px 0;
   color: #dc3545;
   font-size: 14px;
-  background: #eff2f8;
+  background: #343a40;
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #eff2f8;
+  background: #dc3545;
   text-align: center;
   font-size: 15px;
 }
@@ -955,43 +956,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #47536e;
-}
-
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #5777ba;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #415f9d;
+  color: #f8f9fa;
 }
 
 #footer .footer-top {
@@ -1107,4 +1072,52 @@ section {
     text-align: center;
     padding: 5px 0;
   }
+}
+
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image start*/
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("services-hero.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-image .hero-text h1 {
+  color: #dc3545;
+}
+
+.hero-image .hero-text p.aim{
+	text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* The hero image End*/
+
+.btn.btn-info {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
 }
